@@ -1,5 +1,5 @@
 <script>
-    import state from "./stores";
+    import state from "../stores";
 
     let width = 10;
     let height = 10;

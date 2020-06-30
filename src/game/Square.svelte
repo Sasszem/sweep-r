@@ -1,6 +1,6 @@
 <script>import { exclude_internal_props } from "svelte/internal";
 
-    import state from "./stores.js";
+    import state from "../stores.js";
 
     export let row, column;
     $: sq = $state.game.board[row][column];

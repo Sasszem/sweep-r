@@ -1,6 +1,6 @@
 <script>
-	import Game from "./Game.svelte";
-	import Starter from "./Starter.svelte";
+	import Game from "./game/Game.svelte";
+	import Starter from "./starting/Starter.svelte";
 	import state from "./stores";
 </script>
 

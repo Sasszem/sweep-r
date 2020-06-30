@@ -1,5 +1,5 @@
 <script>
-    import state from "./stores";
+    import state from "../stores";
 
     export let width, height, mines;
 
