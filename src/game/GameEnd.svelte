@@ -14,13 +14,13 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        padding: 20px;
+        padding: 5px;
     }
     .hidden {
         visibility: hidden;
     }
     h4 {
-        margin: 20px;
+        margin: 5px;
     }
 </style>
 
