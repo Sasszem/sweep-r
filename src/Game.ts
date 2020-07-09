@@ -61,7 +61,6 @@ class Game {
                 };
             }
         }
-        console.log(this.board);
     }
 
     startGame(width: number, height: number, mines: number): void {
