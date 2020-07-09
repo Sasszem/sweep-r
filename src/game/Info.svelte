@@ -11,7 +11,7 @@
 
 <style>
     h2, h4 {
-        margin: 10px;
+        margin: 5px;
     }
 
     .outer {
