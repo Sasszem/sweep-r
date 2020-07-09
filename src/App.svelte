@@ -12,6 +12,10 @@
 	{/if}
 </main>
 
+<svelte:head>
+	<title>Sweep-R</title>
+</svelte:head>
+
 <style>
 	* {
 		font-family:'Courier New', Courier, monospace;
