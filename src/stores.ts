@@ -1,9 +1,11 @@
 import {writable} from "svelte/store";
 
 import Game from "./Game";
+import Solver from "./Solver";
 
 export interface iState {
     game: Game;
+    solver: Solver;
     state: string;
 }
 
@@ -11,9 +13,15 @@ function makeState() {
     const {update, subscribe} = writable<iState>({
         game: null,
         state: "choose",
+        solver: null,
     });
 
-    update(state => {return {...state, game: new Game(update)};});
+    update(state => {
+            const game = new Game(update);
+            const solver = new Solver(game);
+            return {...state, game, solver};
+        }
+    );
 
     return {
         subscribe,
@@ -52,6 +60,13 @@ function makeState() {
             update(state => {
                 return {...state, state: "select"};
             });
+        },
+
+        runSolver: () => {
+            update(state => {
+                state.solver.run();
+                return state;
+            })
         }
     };
 }
