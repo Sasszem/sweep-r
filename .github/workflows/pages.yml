@@ -18,6 +18,8 @@ jobs:
       run: |
         npm install
         npm run build
+        mv public/build/public/build/* public/build
+        rm -r public/build/public
 
     - name: Deploy
       uses: s0/git-publish-subdir-action@develop
