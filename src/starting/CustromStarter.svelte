@@ -42,11 +42,11 @@
 </style>
 
 <div>
-    <label>Width: </label><input bind:value={width}>
+    <label>Width: <input bind:value={width}></label>
     <p class="error" class:hidden={widthValid}>Width is too small!</p>
-    <label>Height: </label><input bind:value={height}>
+    <label>Height: <input bind:value={height}></label>
     <p class="error" class:hidden={heightValid}>Height is too small!</p>
-    <label>Mines: </label><input bind:value={mines}>
+    <label>Mines: <input bind:value={mines}></label>
     <p class="error" class:hidden={minesValid}>Too many mines!</p>
     <button on:click={click}>Start</button>
 </div>
